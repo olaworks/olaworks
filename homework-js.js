@@ -132,19 +132,19 @@ function process() {
       letterD = "D";
       letterF = "F";
 
-       if (tfa >= 90) {
+       if (tfa >= 90 && tfa <= 100) {
          document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterA;
        }
-       if (tfa >= 80) {
+       if (tfa >= 80 && tfa <= 89) {
          document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterB;
        }
-       if (tfa >= 70) {
+       if (tfa >= 70 && tfa <= 79) {
          document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterC;
        }
-       if (tfa >= 60) {
+       if (tfa >= 60 && tfa <= 69) {
          document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterD;
        }
-       if (tfa >= 0) {
+       if (tfa >= 0 && tfa <=59) {
          document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterF;
        }
     }
