@@ -481,5 +481,7 @@ background: #555;
   .gradingscale {
     margin: 20px;
     border-collapse: collapse;
-
+}
+  table .pleaseEnterText {
+  color: #24b7d1;
 }
