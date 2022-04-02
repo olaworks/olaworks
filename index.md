@@ -1,4 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to the Official OLAWORKS GitHub Page
+
+Please view my live Assignments/Portfolio, as well as Account, for commits! Thank you for visiting!
+
+
+=====================================================================================
 
 You can use the [editor on GitHub](https://github.com/olaworks/olaworks/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
