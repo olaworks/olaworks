@@ -482,6 +482,6 @@ background: #555;
     margin: 20px;
     border-collapse: collapse;
 }
-  table .pleaseEnterText {
+ .pleaseEnterText table{
   color: #24b7d1;
 }
