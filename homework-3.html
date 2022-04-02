@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title> Homework 3 | Functions </title>
+  <link rel="stylesheet" href="homework-css.css">
+  <script type="text/javascript" src="homework-js.js"></script>
+  <script  src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<body class="coming_soon">
+  <nav class="navbar">
+    <h1 class="logo2"><b> JS/AJAX/jQuery </b></h1>
+    <ul class="nav-links">
+      <a class="nav-links_list" href="homework-2.html"> two </a>
+      <a class="nav-links_list" href="homework-3.html"> three </a>
+      <a class="nav-links_list" href="homework-4.html"> four </a>
+      <a class="nav-links_list" href="homework-5.html"> five </a>
+      <a class="nav-links_list" href="homework-6.html"> six </a>
+      <a class="nav-links_list" href="homework-7.html"> seven </a>
+      <a class="nav-links_list" href="homework-8.html"> eight </a>
+      <a class="home_button2" href="homework-1.html">home </a>
+    </ul>
+  </nav>
+  <header>
+    <section class="two_sectionA">
+    <div class="home_hero">
+      <h1 class="hero_h1"> Homework 3 | Functions </h1>
+      <h4 class="hero_h4_2"> Calculating Course Grade, jQuery UI, Temperature Conversion, Elementary Multiplication Quiz </h4>
+      <a href="#scroll-to-List" class="reg_action_button2_extraMargin"> VIEW SOLO PART PAGE MENU </a>
+      <a href="#scroll-to" class="reg_action_button2"> VIEW ALL PARTS AS LANDING PAGE </a>
+
+  </div>
+</section>
+  </header>
+<body>
+  <section id="scroll-to-List" class="three_sectionB">
+    <div class="homeworklist_div_DAP">
+    <table>
+  <tr>
+    <th><h1> List of Solo Parts as Pages </h1></th>
+    <th><h1> Description </h1></th>
+
+  </tr>
+  <tr>
+    <td> <img class="arrow" width=5px src="angle_arrow.png"> <a class ="part_page_button" href="part-1.html"> Part 1 | Calculating Course Grade </a></td>
+    <td> <h4> A program that takes a student's overall homework grade, mid-term exam score, final exam score, and participation grade to produce their overall grade in the course. The grade is based on Percentage Based Grade Scale (Ex: 90-100 - A). If the grade is below a C, the student is notified to retake the course. Only valid input values are processed by the program. An invalid value will result in an error message. </h4> </td>
+  </tr>
+  <tr>
+    <td> <img width=5px src="angle_arrow.png"> <a class ="part_page_button" href="part-2.html"> Part 2 | jQuery UI </a></td>
+    <td> <h4> A program that calculates a given sales employee's monthly earnings based on the number of certain items they've sold for the month. Base pay is $200 + 9% of gross sales for the week. In addition, when hovering over the Salesperson's Name Text Field, the message "Please make sure that the salesperson's name is spelled correctly" is displayed. This message is implemented using the jQuery UI tooltip.</h4>
+  </tr>
+  <tr>
+    <td> <img width=5px src="angle_arrow.png"> <a class ="part_page_button" href="part-3.html"> Part 3 | Temperature Conversion </a></td>
+    <td> <h4> A program that converts a Temperature, given in Fahrenheit, to Celsius, or vice versa. The program accepts all real numbers (-∞ to ∞), and presents the apprioprate tempatue as a whole intger. The user is responsible the choosing the correct conversion button to get the apprioprate temparture. Inputs outside of real numbers, will result in an error message. </h4> </td>
+  </tr>
+  <tr>
+    <td> <img width=5px src="angle_arrow.png"> <a class ="part_page_button" href="part-4.html"> Part 4 | Elementary Multiplication Quiz </a></td>
+    <td><h4 class="h4_for_all_parts_button_margin">  A program that will help an elementary school student learn multiplication. The student then types the answer into an input box. Your program checks the student's answer. If it is correct, display the message "Very good!" in a text area or another part of the page, and then prompt the user to see whether they wish to continue by using the confirm statement. If true, then generate a new question. If not, then exit the script and do not present another question. </h4></td>
+  </tr>
+  <td>  </td>
+  <td>  <a class="all_parts_button" href="#scroll-to" class="reg_action_button2"> VIEW ALL PARTS AS LANDING PAGE </a> </td>
+
+</table>
+  </div>
+  </section>
+  <section class="two_sectionB">
+    <div id="scroll-to" class="BigPartDiv">
+      <div id="part1" class="tabcontent">
+        <h3>Part 1</h3>
+        <h4 class="hero_h4_2"> Calculating Course Grade </h4>
+        <form>
+        <h4 class="hero_h4_part_heading"><b> STUDENT GRADES </h4>
+          <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+
+          <table>
+            <tr>
+            <td class="pleaseEnterText"> <b> HomeWork Average (0-100) </b> - worth 50% of Grade </td>
+            <td> <input type="text" name="hwAvg" size="10"></td>
+          </tr>
+          <tr>
+          <td class="pleaseEnterText"> <b> Midterm Exam Score (0-100) </b> - worth 20% of Grade </td>
+          <td> <input type="text" name="midExam" size="10"></td>
+        </tr>
+        <tr>
+        <td class="pleaseEnterText"> <b> Final Exam Score (0-100) </b> - worth 20% of Grade </td>
+        <td> <input type="text" name="finalExam" size="10"></td>
+      </tr>
+      <tr>
+      <td class="pleaseEnterText"> <b> Participation Average (0-100) </b> - worth 10% of Grade </td>
+      <td> <input type="text" name="particpation" size="10"></td>
+    </tr>
+          </table>
+          <input class="niceSubmitbutton" type="button" onclick="process()" value="View Grade">
+
+        </form>
+
+      </div>
+
+      <div id="part2" class="tabcontent">
+        <h3>Part 2</h3>
+        <h4 class="hero_h4_2"> jQuery UI </h4>
+
+        <form>
+        </form>
+      </div>
+      <div id="part3" class="tabcontent">
+        <h3>Part 3</h3>
+        <h4 class="hero_h4_2"> Temperature Conversion </h4>
+
+      </div>
+      <div id="part4" class="tabcontent">
+        <h3>Part 4</h3>
+        <h4 class="hero_h4_2"> Elementary Multiplication Quiz </h4>
+
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</body>
+<footer>
+<footer>
+</html>

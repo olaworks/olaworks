@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title> Homework 2 | Basic Operations </title>
+  <link rel="stylesheet" href="homework-css.css">
+  <script type="text/javascript" src="homework-js.js"></script>
+  <script  src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+  $("#fadeResultsButton").click(function(){
+  $("#fadeTable").fadeTo("slow" , 0.1);
+  });
+  });
+   </script>
+
+</head>
+<body class="coming_soon">
+  <nav class="navbar">
+    <h1 class="logo2"><b> JS/AJAX/jQuery </b></h1>
+    <ul class="nav-links">
+      <a class="nav-links_list" href="homework-2.html"> two </a>
+      <a class="nav-links_list" href="homework-3.html"> three </a>
+      <a class="nav-links_list" href="homework-4.html"> four </a>
+      <a class="nav-links_list" href="homework-5.html"> five </a>
+      <a class="nav-links_list" href="homework-6.html"> six </a>
+      <a class="nav-links_list" href="homework-7.html"> seven </a>
+      <a class="nav-links_list" href="homework-8.html"> eight </a>
+      <a class="home_button2" href="homework-1.html">home </a>
+    </ul>
+  </nav>
+  <header>
+    <section class="two_sectionA">
+    <div class="home_hero">
+      <h1 class="hero_h1"> Homework 2 | Basic Operations </h1>
+      <h4 class="hero_h4_2"> Demonstrating document.write statements, operations & tests on form input </h4>
+      <a href="#scroll-to" class="reg_action_button2"> VIEW ASSIGNMENT </a>
+  </div>
+</section>
+  </header>
+<body>
+  <section class="two_sectionB">
+    <div id="scroll-to" class="BigPartDiv">
+    <div id="part1" class="tabcontent">
+      <h3>Part 1</h3>
+      <h4 class="hero_h4_2"> Demonstrating document.write statements </h4>
+
+      <script>
+      document.write("<span style = 'color:red; font-family: New Times Roman;'> ab </span> <span style = 'color: navy; font-family: Arial;'> 12 </span> <span style = 'color: green; font-family: Impact;'> 34 <span>");
+      </script>
+    </div>
+
+    <div id="part2" class="tabcontent">
+      <h3>Part 2</h3>
+      <form name="IntegerForm">
+        <h4 class="hero_h4_2"> Help me Perform Operation on 3 Integers </h4>
+        <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+
+        <table>
+          <tr>
+            <td class="pleaseEnterText"> <b> 1st Integer </b> </td>
+            <td> <input type="text" name="integer1" size="10"></td>
+          </tr>
+          <tr>
+            <td class="pleaseEnterText"> <b> 2nd Integer </b> </td>
+            <td> <input type="text" name="integer2" size="10"></td>
+          </tr>
+          <tr>
+              <td class="pleaseEnterText"> <b> 3rd Integer </b> </td>
+              <td> <input type="text" name="integer3" size="10"></td>
+            </tr>
+          </table>
+          <input class="niceSubmitbutton" type="button" onclick="process()" value="SUBMIT">
+          <input class="niceSubmitbutton" type="reset" value="RESET">
+          <input class="niceSubmitbutton" type="button" id="fadeResultsButton" value="CLICK & FADE RESULTS">
+
+          <table class="FormTable" id="fadeTable">
+            <tr>
+            <td class="FormAnswers"> Sum </td>
+            <td> <input type="text" id="fadeSum" name="sumResult" size="10" readonly></td>
+          </tr>
+          <tr>
+          <td class="FormAnswers"> Average </td>
+          <td> <input type="text" name="averageResult" size="10" readonly></td>
+          </tr>
+          <tr>
+            <td class="FormAnswers"> Product </td>
+            <td> <input type="text" name="productResult" size="10" readonly></td>
+          </tr>
+          <tr>
+            <td class="FormAnswers"> Smallest Number </td>
+            <td> <input type="text" name="smallestNumber" size="10" readonly></td>
+            <tr>
+              <td class="FormAnswers"> Largest Number </td>
+              <td> <input type="text" name="largestNumber" size="10" readonly></td>
+            </tr>
+          </tr>
+
+        </table>
+
+      </form>
+    </div>
+    <div id="part3" class="tabcontent">
+      <h3>Part 3</h3>
+      <h4 class="hero_h4_2"> Help me Run Tests on 5 Integers </h4>
+      <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+
+      <form name="Test5Form">
+        <table>
+          <tr>
+            <td class="pleaseEnterText"> <b> 1st Integer </b> </td>
+            <td> <input type="text" name="test5_integer1" size="10"></td>
+          </tr>
+          <tr>
+            <td class="pleaseEnterText"> <b> 2nd Integer </b> </td>
+            <td> <input type="text" name="test5_integer2" size="10"></td>
+          </tr>
+          <tr>
+              <td class="pleaseEnterText"> <b> 3rd Integer </b> </td>
+              <td> <input type="text" name="test5_integer3" size="10"></td>
+            </tr>
+            <tr>
+                <td class="pleaseEnterText"> <b> 4th Integer </b> </td>
+                <td> <input type="text" name="test5_integer4" size="10"></td>
+              </tr>
+              <tr>
+                  <td class="pleaseEnterText"> <b> 5th Integer </b> </td>
+                  <td> <input type="text" name="test5_integer5" size="10"></td>
+                </tr>
+          </table>
+          <input class="niceSubmitbutton" type="button" onclick="process()" value="SUBMIT">
+          <input class="niceSubmitbutton" type="reset" value="RESET">
+
+          <table class="FormTable">
+            <tr>
+            <td class="FormAnswers"> Total Zeros </td>
+            <td> <input type="text" id="fadeSum" name="zerosResult" size="10" readonly></td>
+          </tr>
+          <tr>
+          <td class="FormAnswers"> Total Postive Integers </td>
+          <td> <input type="text" name="positiveintResult" size="10" readonly></td>
+          </tr>
+          <tr>
+            <td class="FormAnswers"> Total Negative Integers </td>
+            <td> <input type="text" name="negativeintResult" size="10" readonly></td>
+          </tr>
+
+        </table>
+
+      </form>
+    </div>
+
+    </div>
+  </div>
+  </section>
+
+</body>
+<footer>
+<footer>
+</html>
