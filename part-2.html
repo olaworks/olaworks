@@ -26,7 +26,7 @@
     <section class="one_sectionA">
     <div class="home_hero">
       <h1 class="hero_h1"> PART 2 | jQuery UI </h1>
-      <h4 class="hero_h4"> Part 2 of the Homework 3 Functions Assignment- a program that calculates a given sales employee's monthly earnings, as well as utilizes jQuery UI. </h4>
+      <h4 class="hero_h4"> Part 2 of the Homework 3 Functions Assignment- a program that calculates sales employee's earnings- utilizes jQuery UI. </h4>
       <a href="#scroll-to-List" class="reg_action_button3_extraMargin"> VIEW SOLO PART PAGE MENU </a>
       <a href="#scroll-to" class="reg_action_button"> VIEW PROGRAM </a>
   </div>
@@ -79,29 +79,86 @@
           </table>
               </form>
           <h1 class="pleaseEnterTexth1"> <b> Input the number of items sold for each item number: </b> </td>
-            <form>
+            <form class="SalesForm">
               <table>
                 <tr>
                   <td class="pleaseEnterText"> <b> Item 1 </b> </td>
                   <td> <input type="text" name="item1" size="10"></td>
                 </tr>
                 <tr>
-                  <td class="pleaseEnterText"> Item 2 </td>
+                  <td class="pleaseEnterText"> <b> Item 2 </b> </td>
                   <td> <input type="text" name="item2" size="10"></td>
                 </tr>
                 <tr>
-                  <td class="pleaseEnterText"> Item 3 </td>
+                  <td class="pleaseEnterText"> <b> Item 3 </b> </td>
                   <td> <input type="text" name="item3" size="10"></td>
                 </tr>
                 <tr>
-                  <td class="pleaseEnterText"> Item 4 </td>
+                  <td class="pleaseEnterText"> <b> Item 4 </b> </td>
                   <td> <input type="text" name="item4" size="10"></td>
                 </tr>
               </table>
-              <input class="niceSubmitbutton" type="button" onclick="process()" value="SUBMIT">
+              <input class="niceSubmitbutton" type="button" onclick="process4()" value="SUBMIT">
               <input class="niceSubmitbutton" type="reset" value="RESET">
 
+
+              <table>
+                <tr>
+                <th class="grading-heading"> <h4 class="hero_h4_part_heading"> ITEM # </h4> </th>
+                <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> PRICE </h4> </th>
+                <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> NUMBER SOLD </h4> </th>
+                <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL $ PER ITEM </h4> </th>
+              </tr>
+              <tr>
+                <td class="pleaseEnterText"> 1 </td>
+                <td class="pleaseEnterText"> $239.99 </td>
+                <td> <input type="text" name="1-num-sold" size="10" readonly></td>
+                <td> <input type="text" name="1-price-total" size="10" readonly></td>
+              </tr>
+
+              <tr>
+                <td class="pleaseEnterText"> 2 </td>
+                <td class="pleaseEnterText"> $129.75 </td>
+                <td> <input type="text" name="2-num-sold" size="10" readonly></td>
+                <td> <input type="text" name="2-price-total" size="10" readonly></td>
+              </tr>
+
+              <tr>
+                <td class="pleaseEnterText"> 3 </td>
+                <td class="pleaseEnterText"> $99.95 </td>
+                <td> <input type="text" name="3-num-sold" size="10" readonly></td>
+                <td> <input type="text" name="3-price-total" size="10" readonly></td>
+              </tr>
+
+              <tr>
+                <td class="pleaseEnterText"> 4 </td>
+                <td class="pleaseEnterText"> $350.89 </td>
+                <td> <input type="text" name="4-num-sold" size="10" readonly></td>
+                <td> <input type="text" name="4-price-total" size="10" readonly></td>
+              </tr>
+              </table>
+
+              <table class="total-add-margin">
+                <tr>
+                  <th class="grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL ITEMS SOLD </h4></th>
+                  <td> <input type="text" name="total-num-sold" size="10" readonly></td>
+              </tr>
+              <tr>
+                <th class="grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL $ MONTHLY EARNINGS </h4></th>
+                <td> <input type="text" name="total-price-sold" size="10" readonly></td>
+              </tr>
+            <!--  <tr>
+                <td> <input type="text" name="tanya1" size="10" readonly> This month + var JS variable | INPUT TYPE  </td>
+              </tr>
+              <tr>
+                <td> <input type="text" name="tanya1" size="10" readonly> </td>
+                <td> <input type="text" name="total-monthly-earnings" size="10" readonly></td>
+              </tr> !-->
+              </table>
+
             </form>
+
+
 
 
 
@@ -114,3 +171,4 @@
 <footer>
 <footer>
 </html>
+
