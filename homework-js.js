@@ -180,7 +180,7 @@ function process2(){
 
     }
 
-}
+
 
       function process4() {
         item1numtotal = document.forms["SalesForm"].elements["item1"].value;
