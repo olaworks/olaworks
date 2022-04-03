@@ -9,6 +9,12 @@ function process1() {
     n2 = parseInt(number2);
     n3 = parseInt(number3);
 
+    if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+      window.alert("Please enter all fields with any real numbers- postive, negative, or decimals.");
+    }
+
+    else {
+
     sum = n1 + n2 + n3;
     average = (n1 + n2 + n3) / 3;
     product = n1 * n2 * n3;
@@ -23,6 +29,8 @@ function process1() {
     document.forms["IntegerForm"].elements["largestNumber"].value = max;
   }
 
+}
+
 function process2(){
       test5_number1 = document.forms["Test5Form"].elements["test5_integer1"].value;
       test5_number2 = document.forms["Test5Form"].elements["test5_integer2"].value;
@@ -35,6 +43,12 @@ function process2(){
       n3_5 = parseInt(test5_number3);
       n4_5 = parseInt(test5_number4);
       n5_5 = parseInt(test5_number5);
+
+      if (isNaN(n1_5) || isNaN(n2_5) || isNaN(n3_5) || isNaN(n4_5) || isNaN(n5_5)) {
+        window.alert("Please enter all fields with any real numbers- postive, negative, or decimals.");
+      }
+
+      else {
 
       var displayzeros = 0;
 
@@ -108,10 +122,8 @@ function process2(){
 
       document.forms["Test5Form"].elements["negativeintResult"].value = displaynegativeint;
 
-
-
-
     }
+  }
 
     function process3(){
       //HOMEWORK PAGE 3 FORMS
@@ -126,14 +138,17 @@ function process2(){
         fg = parseInt(finalExamGrade);
         pg = parseInt(particpationGrade);
 
-        if (hg < 0 || hg > 100 || mg < 0 || mg > 100 || fg < 0 || fg > 100 || pg < 0 || pg > 100 ) {
-         window.alert("Please only enter numbers between 0 and 100.");
+        if (hg < 0 || hg > 100 || isNaN(hg) || mg < 0 || mg > 100 || isNaN(mg) || fg < 0 || fg > 100 || isNaN(fg) || pg < 0 || pg > 100 || isNaN(pg) ) {
+         window.alert("Please enter all fields, only using numbers between 0 and 100.");
+
+         //If value input is invalid (not between 0-100 or NanN) following code clears input- nice for user as opposed to manuel reset w/ Reset Button UNLESS they just forgot to put a number- annoying to have to re-input..
+         /*document.forms["GetFinalGradeForm"].elements["hwAvg"].value = "";
+         document.forms["GetFinalGradeForm"].elements["midExam"].value = "";
+         document.forms["GetFinalGradeForm"].elements["finalExam"].value = "";
+         document.forms["GetFinalGradeForm"].elements["particpation"].value = "";*/
         }
 
-        /*if (isNaN(hg) || isNaN(mg) || (isNaN(fg) || (isNaN(pg)) {
-          window.alert("Please only enter Numbers, that are between 0 and 100..");
-        }*/
-
+        else {
         tfa = (0.5 * hg) + (0.2 * mg) + (0.2 * fg) + (0.1 * pg);
 
         document.forms["GetFinalGradeForm"].elements["theFinalAverage"].value = tfa;
@@ -143,6 +158,7 @@ function process2(){
         letterC = "C";
         letterD = "D";
         letterF = "F";
+        retakeADVICE = "**STRONLY ADVISED: Student should Retake Course**";
 
          if (tfa >= 90) {
            document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterA;
@@ -155,12 +171,21 @@ function process2(){
          }
          else if (tfa >= 60) {
            document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterD;
-           // display student must retake
+           document.forms["GetFinalGradeForm"].elements["retake"].value = retakeADVICE;
          }
          else {
            document.forms["GetFinalGradeForm"].elements["theFinalGrade"].value = letterF;
-           // display student must retake
+           document.forms["GetFinalGradeForm"].elements["retake"].value = retakeADVICE;
          }
 
     }
 
+}
+
+      function process4() {
+        item1numtotal = document.forms["SalesForm"].elements["item1"].value;
+        item2numtotal = document.forms.["SalesForm"].elements["item2"].value;
+        item3numtotal = document.forms.["SalesForm"].elements["item3"].value;
+        item4numtotal = document.forms.["SalesForm"].elements["item4"].value;
+        
+      }
