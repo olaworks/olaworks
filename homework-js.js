@@ -180,12 +180,4 @@ function process2(){
 
     }
 
-
-
-      function process4() {
-        item1numtotal = document.forms["SalesForm"].elements["item1"].value;
-        item2numtotal = document.forms.["SalesForm"].elements["item2"].value;
-        item3numtotal = document.forms.["SalesForm"].elements["item3"].value;
-        item4numtotal = document.forms.["SalesForm"].elements["item4"].value;
-        
-      }
+}
