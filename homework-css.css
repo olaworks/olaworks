@@ -14,8 +14,16 @@ body , html {
  scroll-behavior: smooth;
 }
 form table td input {
-  margin-left: 10px;
+   margin-left: 10px;
+   color: white;
+   background-color: #1d7180 ;
+   border: .5px #166b7a solid;
+   border-bottom: .5px #94e6f4 solid;
+   border-bottom: .5px #94e6f4 solid;
+   outline: none;
+   border-radius: 2px;
 }
+
 
 /* NAVIGATION */
 
@@ -446,6 +454,15 @@ background: #555;
       margin-bottom: 25px;
       font-size: 14px;
   }
+  .pleaseEnterTexth1 {
+      margin-top: 15px;
+      padding: -bottom: 15px;
+      color:  #cce2e6 ;
+      font: Helvetica;
+      font-weight: lighter;
+      margin-bottom: 25px;
+      font-size: 12px;
+  }
 
   .FormTable {
   }
@@ -500,4 +517,3 @@ background: #555;
        padding: 5px;
        text-align: center;
  }
-
