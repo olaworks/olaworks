@@ -75,12 +75,11 @@
 
 
 
-
         <div class = "GRADE_GRID">
           <div class="Area LeftForm">
         <form name ="GetFinalGradeForm">
         <h4 class="hero_h4_part_heading"><b> STUDENT GRADES </h4>
-          <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+          <h4 class="hero_h4_pleaseEnter"> Please enter Numbers in the following Text Fields: </h4>
 
           <table>
             <tr>
@@ -94,11 +93,11 @@
         <tr>
         <td class="pleaseEnterText"> <b> Final Exam Score (0-100) </b> - worth 20% of Grade </td>
         <td> <input type="text" name="finalExam" size="10"></td>
-        </tr>
-        <tr>
-        <td class="pleaseEnterText"> <b> Participation Average (0-100) </b> - worth 10% of Grade </td>
-        <td> <input type="text" name="particpation" size="10"></td>
-        </tr>
+      </tr>
+      <tr>
+      <td class="pleaseEnterText"> <b> Participation Average (0-100) </b> - worth 10% of Grade </td>
+      <td> <input type="text" name="particpation" size="10"></td>
+    </tr>
           </table>
           <input class="niceSubmitbutton" type="button" onclick="process3()" value="VIEW AVERAGE">
           <input class="niceSubmitbutton" type="reset" value="RESET">
@@ -110,14 +109,17 @@
           <td> Average </td>
           <td> <input type="text" name="theFinalAverage" size="10" readonly></td>
         </tr>
-        <tr>
+      <tr>
         <td> Grade </td>
         <td> <input type="text" name="theFinalGrade" size="10" readonly></td>
-        </tr>
-        </table>
+      </tr>
+      <tr>
+      <td> <input class="retakeWIDTH" type="text" name="retake" size="10" readonly></td>
+    </tr>
+      </table>
         </form>
-        </div>
-        <div class="Area RightTable">
+      </div>
+      <div class="Area RightTable">
         <table class="grading_scale">
           <tr>
           <th class="grade-heading"> <h4 class="hero_h4_part_heading"> AVERAGE </th>
@@ -146,8 +148,8 @@
 
 
         </table>
-        </div>
-        </div>
+      </div>
+      </div>
 
 
 
@@ -189,4 +191,3 @@
 <footer>
 <footer>
 </html>
-
