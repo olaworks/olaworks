@@ -168,8 +168,111 @@
         <h3>Part 2</h3>
         <h4 class="hero_h4_2"> jQuery UI </h4>
 
-        <form>
-        </form>
+        <div>
+          <h4 class="hero_h4_part_heading"> SALES EMPLOYEE MONTHLY EARNINGS </h4>
+          <h4 class="hero_h4_pleaseEnter"> Please enter a Name in the Salesperson Field: </h4>
+
+          <form name="SalesForm">
+          <table>
+            <tr>
+              <td class="pleaseEnterText"> Salesperson </td>
+              <td><label for="sales-tooltipUI"></label> <input id="sales-tooltipUI" type="text" name="employee_name" size="10" title="Please make sure that the salesperson's name is spelled correctly"></td>
+            </tr>
+              </table>
+
+
+
+              <h1 class="pleaseEnterTexth1"> <b> Input the number of items sold for each item number: </b> </td>
+                <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+
+
+                  <table>
+                    <tr>
+                      <td class="pleaseEnterText"> <b> 1 - Fashionable Blazer </b> </td>
+                      <td> <input type="text" name="item1" size="10"></td>
+                    </tr>
+                    <tr>
+                      <td class="pleaseEnterText"> <b> 2 - Leather Loafers </b> </td>
+                      <td> <input type="text" name="item2" size="10"></td>
+                    </tr>
+                    <tr>
+                      <td class="pleaseEnterText"> <b> 3 - Cashmere Sweater </b> </td>
+                      <td> <input type="text" name="item3" size="10"></td>
+                    </tr>
+                    <tr>
+                      <td class="pleaseEnterText"> <b> 4 - Custom Suit Jacket </b> </td>
+                      <td> <input type="text" name="item4" size="10"></td>
+                    </tr>
+                  </table>
+                  <input class="niceSubmitbutton" type="button" onclick="process4()" value="SUBMIT">
+                  <input class="niceSubmitbutton" type="reset" value="RESET">
+
+
+                  <table class="item-table">
+                    <tr>
+                    <th class="grading-heading"> <h4 class="hero_h4_part_heading"> ITEM # </h4> </th>
+                    <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> PRICE </h4> </th>
+                    <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> NUMBER SOLD </h4> </th>
+                    <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL $ PER ITEM </h4> </th>
+                  </tr>
+                  <tr>
+                    <td class="pleaseEnterText"> 1 </td>
+                    <td class="pleaseEnterText"> $239.99 </td>
+                    <td> <input type="text" name="1-num-sold" size="10" readonly></td>
+                    <td> <input type="text" name="1-price-total" size="10" readonly></td>
+                  </tr>
+
+                  <tr>
+                    <td class="pleaseEnterText"> 2 </td>
+                    <td class="pleaseEnterText"> $129.75 </td>
+                    <td> <input type="text" name="2-num-sold" size="10" readonly></td>
+                    <td> <input type="text" name="2-price-total" size="10" readonly></td>
+                  </tr>
+
+                  <tr>
+                    <td class="pleaseEnterText"> 3 </td>
+                    <td class="pleaseEnterText"> $99.95 </td>
+                    <td> <input type="text" name="3-num-sold" size="10" readonly></td>
+                    <td> <input type="text" name="3-price-total" size="10" readonly></td>
+                  </tr>
+
+                  <tr>
+                    <td class="pleaseEnterText"> 4 </td>
+                    <td class="pleaseEnterText"> $350.89 </td>
+                    <td> <input type="text" name="4-num-sold" size="10" readonly></td>
+                    <td> <input type="text" name="4-price-total" size="10" readonly></td>
+                  </tr>
+                  </table>
+
+                  <table class="total-add-margin">
+                    <tr>
+                      <th class="pleaseEnterText">  Salesperson: </th>
+                      <td> <input type="text" name="Salesperson-Name" size="10" readonly></td>
+
+                    </tr>
+                    <tr>
+                      <th class="grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL ITEMS SOLD </h4></th>
+                      <td> <input type="text" name="total-num-sold" size="10" readonly></td>
+                  </tr>
+                  <tr>
+                    <th class="grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL $ MONTHLY EARNINGS </h4></th>
+                    <td> <input type="text" name="total-price-sold" size="10" readonly></td>
+                  </tr>
+                  </table>
+
+                </form>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
       </div>
       <div id="part3" class="tabcontent">
         <h3>Part 3</h3>
