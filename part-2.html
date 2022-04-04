@@ -7,6 +7,19 @@
   <link rel="icon" type="image/png" href="logo.png">
   <title> PART 2 | jQuery UI - from Homework 3 | Functions </title>
   <link rel="stylesheet" href="homework-css.css">
+  <script type="text/javascript" src="homework-js.js"></script>
+  <script  src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<!--<script>
+ $( function() {
+   $( document ).tooltip();
+ }
+ );
+</script>!-->
+<!-- Tooltip Function will be applied to any LABEL; Design Labels in CSS; label for="" will pin the label to corresponding id (pin to an input element) !-->
+
+
 </head>
 <body class="home_body">
   <nav class="navbar">
@@ -68,41 +81,45 @@
   <section id="scroll-to" class="part_sectionB">
     <div>
       <h4 class="hero_h4_part_heading"> SALES EMPLOYEE MONTHLY EARNINGS </h4>
-      <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+      <h4 class="hero_h4_pleaseEnter"> Please enter a Name in the Salesperson Field: </h4>
 
-      <form>
+      <form name="SalesForm">
       <table>
         <tr>
           <td class="pleaseEnterText"> Salesperson </td>
-          <td> <input type="text" name="employee_name" size="10"></td>
+          <td><label for="sales-tooltipUI"></label> <input id="sales-tooltipUI" type="text" name="employee_name" size="10" title="Please make sure that the salesperson's name is spelled correctly"></td>
         </tr>
           </table>
-              </form>
+
+
+
           <h1 class="pleaseEnterTexth1"> <b> Input the number of items sold for each item number: </b> </td>
-            <form class="SalesForm">
+            <h4 class="hero_h4_pleaseEnter"> Please enter Integers in the following Text Fields: </h4>
+
+
               <table>
                 <tr>
-                  <td class="pleaseEnterText"> <b> Item 1 </b> </td>
+                  <td class="pleaseEnterText"> <b> 1 - Fashionable Blazer </b> </td>
                   <td> <input type="text" name="item1" size="10"></td>
                 </tr>
                 <tr>
-                  <td class="pleaseEnterText"> <b> Item 2 </b> </td>
+                  <td class="pleaseEnterText"> <b> 2 - Leather Loafers </b> </td>
                   <td> <input type="text" name="item2" size="10"></td>
                 </tr>
                 <tr>
-                  <td class="pleaseEnterText"> <b> Item 3 </b> </td>
+                  <td class="pleaseEnterText"> <b> 3 - Cashmere Sweater </b> </td>
                   <td> <input type="text" name="item3" size="10"></td>
                 </tr>
                 <tr>
-                  <td class="pleaseEnterText"> <b> Item 4 </b> </td>
+                  <td class="pleaseEnterText"> <b> 4 - Custom Suit Jacket </b> </td>
                   <td> <input type="text" name="item4" size="10"></td>
                 </tr>
               </table>
-              <!-- <input class="niceSubmitbutton" type="button" onclick="process4()" value="SUBMIT">
+              <input class="niceSubmitbutton" type="button" onclick="process4()" value="SUBMIT">
               <input class="niceSubmitbutton" type="reset" value="RESET">
 
 
-              <table>
+              <table class="item-table">
                 <tr>
                 <th class="grading-heading"> <h4 class="hero_h4_part_heading"> ITEM # </h4> </th>
                 <th class= "grading-heading"> <h4 class="hero_h4_part_heading"> PRICE </h4> </th>
@@ -140,6 +157,11 @@
 
               <table class="total-add-margin">
                 <tr>
+                  <th class="pleaseEnterText">  Salesperson: </th>
+                  <td> <input type="text" name="Salesperson-Name" size="10" readonly></td>
+
+                </tr>
+                <tr>
                   <th class="grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL ITEMS SOLD </h4></th>
                   <td> <input type="text" name="total-num-sold" size="10" readonly></td>
               </tr>
@@ -147,13 +169,6 @@
                 <th class="grading-heading"> <h4 class="hero_h4_part_heading"> TOTAL $ MONTHLY EARNINGS </h4></th>
                 <td> <input type="text" name="total-price-sold" size="10" readonly></td>
               </tr>
-            <!--  <tr>
-                <td> <input type="text" name="tanya1" size="10" readonly> This month + var JS variable | INPUT TYPE  </td>
-              </tr>
-              <tr>
-                <td> <input type="text" name="tanya1" size="10" readonly> </td>
-                <td> <input type="text" name="total-monthly-earnings" size="10" readonly></td>
-              </tr> !-->
               </table>
 
             </form>
@@ -171,4 +186,3 @@
 <footer>
 <footer>
 </html>
-
