@@ -549,3 +549,8 @@ background: #555;
     font-size: 10px;
     margin-bottom: 10px;
  }
+ .dollar-sign {
+   width: 30px;
+   font-weight: bold;
+   text-align: right;
+ }
