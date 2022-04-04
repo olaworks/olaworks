@@ -543,3 +543,9 @@ background: #555;
  .item-table {
    width: 450px;
  }
+ .small-comm-text {
+    font-weight: lighter;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 10px;
+ }
