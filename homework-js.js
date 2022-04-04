@@ -125,7 +125,7 @@ function process2(){
     }
   }
 
-    function process3(){
+function process3(){
       //HOMEWORK PAGE 3 FORMS
 
         hwAvgGrade        = document.forms["GetFinalGradeForm"].elements["hwAvg"].value;
@@ -181,3 +181,49 @@ function process2(){
     }
 
 }
+
+function process4(){
+        item1numtotal = document.forms["SalesForm"].elements["item1"].value;
+        item2numtotal = document.forms["SalesForm"].elements["item2"].value;
+        item3numtotal = document.forms["SalesForm"].elements["item3"].value;
+        item4numtotal = document.forms["SalesForm"].elements["item4"].value;
+
+        i1_NT = parseInt(item1numtotal);
+        i2_NT = parseInt(item2numtotal);
+        i3_NT = parseInt(item3numtotal);
+        i4_NT = parseInt(item4numtotal);
+
+            if (isNaN(i1_NT) || isNaN(i2_NT ) || isNaN(i3_NT) || isNaN(i4_NT) ) {
+              window.alert("Please enter all fields with any real numbers- postive, negative, or decimals.");
+            }
+
+            else {
+              document.forms["SalesForm"].elements["1-num-sold"].value = i1_NT;
+              document.forms["SalesForm"].elements["2-num-sold"].value = i2_NT;
+              document.forms["SalesForm"].elements["3-num-sold"].value = i3_NT;
+              document.forms["SalesForm"].elements["4-num-sold"].value = i4_NT;
+
+              i1_PT = (i1_NT * 239.99);
+              i2_PT = (i2_NT * 129.75);
+              i3_PT = (i3_NT * 99.95);
+              i4_PT = (i4_NT * 350.89);
+
+              document.forms["SalesForm"].elements["1-price-total"].value = i1_PT;
+              document.forms["SalesForm"].elements["2-price-total"].value = i2_PT;
+              document.forms["SalesForm"].elements["3-price-total"].value = i3_PT;
+              document.forms["SalesForm"].elements["4-price-total"].value = i4_PT;
+
+              final_NT = ( i1_NT + i2_NT + i3_NT + i4_NT);
+              final_PT = ( i1_PT + i2_PT + i2_PT + i4_PT);
+
+              document.forms["SalesForm"].elements["total-num-sold"].value = final_NT;
+              document.forms["SalesForm"].elements["total-price-sold"].value = final_PT;
+
+              salesName = document.forms["SalesForm"].elements["employee_name"].value;
+
+              document.forms["SalesForm"].elements["Salesperson-Name"].value = salesName;
+
+
+
+            }
+      }
