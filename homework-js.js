@@ -208,18 +208,18 @@ function process4(){
               i3_PT = (i3_NT * 99.95);
               i4_PT = (i4_NT * 350.89);
 
-              document.forms["SalesForm"].elements["1-price-total"].value = i1_PT;
-              document.forms["SalesForm"].elements["2-price-total"].value = i2_PT;
-              document.forms["SalesForm"].elements["3-price-total"].value = i3_PT;
-              document.forms["SalesForm"].elements["4-price-total"].value = i4_PT;
+              document.forms["SalesForm"].elements["1-price-total"].value = i1_PT.toFixed(2);
+              document.forms["SalesForm"].elements["2-price-total"].value = i2_PT.toFixed(2);
+              document.forms["SalesForm"].elements["3-price-total"].value = i3_PT.toFixed(2);
+              document.forms["SalesForm"].elements["4-price-total"].value = i4_PT.toFixed(2);
 
               final_NT = ( i1_NT + i2_NT + i3_NT + i4_NT);
               final_S = (i1_PT + i2_PT + i2_PT + i4_PT);
               final_E = (200 + (.09 * (i1_PT + i2_PT + i2_PT + i4_PT)));
 
               document.forms["SalesForm"].elements["total-num-sold"].value = final_NT;
-              document.forms["SalesForm"].elements["total-sales"].value = final_S;
-              document.forms["SalesForm"].elements["total-earnings"].value = final_E;
+              document.forms["SalesForm"].elements["total-sales"].value = final_S.toFixed(2);
+              document.forms["SalesForm"].elements["total-earnings"].value = final_E.toFixed(2);
 
               salesName = document.forms["SalesForm"].elements["employee_name"].value;
 
