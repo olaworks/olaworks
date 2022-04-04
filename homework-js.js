@@ -214,10 +214,12 @@ function process4(){
               document.forms["SalesForm"].elements["4-price-total"].value = i4_PT;
 
               final_NT = ( i1_NT + i2_NT + i3_NT + i4_NT);
-              final_PT = ( i1_PT + i2_PT + i2_PT + i4_PT);
+              final_S = (i1_PT + i2_PT + i2_PT + i4_PT);
+              final_E = (200 + (.09 * (i1_PT + i2_PT + i2_PT + i4_PT)));
 
               document.forms["SalesForm"].elements["total-num-sold"].value = final_NT;
-              document.forms["SalesForm"].elements["total-price-sold"].value = final_PT;
+              document.forms["SalesForm"].elements["total-sales"].value = final_S;
+              document.forms["SalesForm"].elements["total-earnings"].value = final_E;
 
               salesName = document.forms["SalesForm"].elements["employee_name"].value;
 
