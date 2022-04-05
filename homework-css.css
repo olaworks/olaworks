@@ -27,11 +27,11 @@ label {
   display: inline-block;
   width: 5em;
 }
-    .tooltip {
-      background-color: white;
-      color: black;
+  /*.ui-tooltip {
+      background-color: red;
+      color: purple;
       border-radius: 3px;
-    }
+    }*/
 
 
 /* NAVIGATION */
@@ -236,6 +236,11 @@ label {
     font-size: 14px;
   }
   .hero_h4_part_heading {
+    font-weight: bold;
+    color: white;
+  }
+  .hero_h4_part_heading-center {
+    text-align: center;
     font-weight: bold;
     color: white;
   }
@@ -503,6 +508,7 @@ background: #555;
     width: auto;
     height: auto;
   }
+
   .LeftForm { grid-row: 1 / span 1; grid-column: 1 / span 1};
   .RightTable {grid-row: 1 / span 1; grid-column: 2 / span 2};
 
@@ -513,6 +519,25 @@ background: #555;
 /*  .grade-heading {
     margin: 10px;
   }*/
+
+
+  .TEMP-GRID {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    width: auto;
+    height: auto;
+
+  }
+
+  .FahStart { grid-row: 1 / span 1; grid-column: 1 / span 1};
+  .CelStart {grid-row: 1 / span 1; grid-column: 2 / span 2};
+
+  .temp-outline {
+    border: 2px solid;
+    border-radius: 3px;
+  }
 
   .grading_scale {
     width: 200px;
@@ -554,3 +579,9 @@ background: #555;
    font-weight: bold;
    text-align: right;
  }
+ .degree-sign {
+   width: 30px;
+   font-weight: bold;
+   text-align: left;
+ }
+
