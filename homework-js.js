@@ -229,3 +229,35 @@ function process4(){
 
             }
       }
+
+function process5(){
+  getfahvalue = document.forms["FahConver"].elements["fah-input"].value;
+
+  fahT = parseInt(getfahvalue);
+
+  if (isNaN(fahT)) {
+    window.alert("Please enter all fields with any real numbers- postive, negative, or decimals.");
+  }
+
+
+  else {
+    finalCelTmep = ((5/9) * (fahT - 32));
+    document.forms["FahConver"].elements["cel-result"].value = finalCelTmep.toFixed(0);
+  }
+}
+
+
+function process6(){
+  getcelvalue = document.forms["CelConver"].elements["cel-input"].value;
+
+  celT = parseInt(getcelvalue);
+
+  if (isNaN(celT)) {
+    window.alert("Please enter all fields with any real numbers- postive, negative, or decimals.");
+  }
+
+  else {
+    finalFahTemp = (((9/5) * celT) + 32);
+    document.forms["CelConver"].elements["fah-result"].value = finalFahTemp.toFixed(0);
+  }
+}
