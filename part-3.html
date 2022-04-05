@@ -7,6 +7,10 @@
   <link rel="icon" type="image/png" href="logo.png">
   <title> PART 3 | Temperature Conversion - from Homework 3 | Functions </title>
   <link rel="stylesheet" href="homework-css.css">
+  <script type="text/javascript" src="homework-js.js"></script>
+  <script  src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
 </head>
 <body class="home_body">
   <nav class="navbar">
@@ -66,8 +70,69 @@
   </section>
 
   <section id="scroll-to" class="part_sectionB">
+    <div>
+    <div>
+      <h4 class="hero_h4_part_heading-center"> °F / °C TEMPERATURE CONVERSION </h4>
+</div>
+    <div class="TEMP-GRID">
+      <div class="Area FahStart">
+        <div class="tabcontent">
+        <h4 class="hero_h4_part_heading"> °F TO °C </h4>
+        <h4 class="pleaseEnterText"><b> CONVERSION </b></h4>
+        <form name="FahConver">
+        <table>
+          <tr>
+            <td class="pleaseEnterTexth1"> ENTER <b> FAHRENHEIT </b> <td>
+            <td> <input type="text" name="fah-input" size="10"></td>
+            <td class="degree-sign">° </td>
+          </tr>
+        </table>
+        <input class="niceSubmitbutton" type="button" onclick="process5()" value="CONVERT TO °C">
+        <input class="niceSubmitbutton" type="reset" value="RESET">
 
-  </div>
+        <table>
+          <tr>
+            <td class="pleaseEnterTexth1"> YOUR <b> CELSIUS </b> CONVERSION <td>
+            <td> <input type="text" name="cel-result" size="10" readonly></td>
+            <td class="degree-sign">° </td>
+          </tr>
+        </table>
+      </form>
+      </div>
+
+
+      </div>
+        <div class="Area CelStart">
+          <div class="tabcontent">
+          <h4 class="hero_h4_part_heading">°C TO °F </h4>
+          <h4 class="pleaseEnterText"><b> CONVERSION </b></h4>
+          <form name ="CelConver">
+          <table>
+            <tr>
+              <td class="pleaseEnterTexth1"> ENTER <b> CELSIUS </b> <td>
+              <td> <input type="text" name="cel-input" size="10"></td>
+              <td class="degree-sign">° </td>
+
+            </tr>
+          </table>
+          <input class="niceSubmitbutton" type="button" onclick="process6()" value="CONVERT TO °F">
+          <input class="niceSubmitbutton" type="reset" value="RESET">
+
+          <table>
+            <tr>
+              <td class="pleaseEnterTexth1"> YOUR <b> FAHRENHEIT </b> CONVERSION <td>
+              <td> <input type="text" name="fah-result" size="10" readonly></td>
+              <td class="degree-sign">° </td>
+            </tr>
+          </table>
+          </form>
+        </div>
+
+
+    </div>
+
+</div>
+</div>
   </section>
 
 </body>
