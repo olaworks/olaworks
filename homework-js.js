@@ -261,3 +261,36 @@ function process6(){
     document.forms["CelConver"].elements["fah-result"].value = finalFahTemp.toFixed(0);
   }
 }
+
+function process7() {
+  ran1 = Math.floor(Math.random() * 10);
+  ran2 = Math.floor(Math.random() * 10);
+  document.forms["multiply-Form"].elements["var1"].value = ran1;
+  document.forms["multiply-Form"].elements["var2"].value = ran2;
+
+  rpa = ran1 * ran2;
+
+  question = ("What is " + ran1 + " times " + ran2 + " ?");
+
+  document.forms["multiply-Form"].elements["multiply-question"].value = question;
+  document.forms["checkForm"].elements["check-product-answer"].value = "";
+
+}
+
+function process8() {
+  goodjob = "Good Job!";
+  tryAgain = "Try Again";
+
+  userproductanswer =  document.forms["checkForm"].elements["user-product-answer"].value;
+  upa = parseInt(userproductanswer);
+
+  if (upa == rpa){
+    document.forms["checkForm"].elements["check-product-answer"].value = goodjob;
+    document.forms["checkForm"].elements["user-product-answer"].value = "";
+  }
+  else {
+    document.forms["checkForm"].elements["check-product-answer"].value = tryAgain;
+    document.forms["checkForm"].elements["user-product-answer"].value = "";
+
+  }
+}
